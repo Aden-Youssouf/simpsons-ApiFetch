@@ -8,7 +8,7 @@ import Display from './Components/DisplayEmployee';
 
 class App extends React.Component{
   state = {
-    beer : ''
+    Quote : ''
   }
   componentDidMount() {
     this.fetchData()
