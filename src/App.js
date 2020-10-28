@@ -17,16 +17,16 @@ class App extends React.Component{
     fetch('https://thesimpsonsquoteapi.glitch.me/quotes')
     .then(res => res.json())
     .then(data => {
-      this.setState({ beer : data[0] })
+      this.setState({ Quote : data[0] })
     })
   }
   render() {
-    console.log(this.state.beer);
+    console.log(this.state.Quote);
   return (
     <div className="App">
       <h1>Hello this is Simpsons Quotes </h1>
       <input type='button' value='Nouvelle citation' onClick={this.fetchData}/>
-      <Display beer = {this.state.beer} />
+      <Display Quote = {this.state.Quote} />
     </div>
   );
 }
