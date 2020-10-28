@@ -7,6 +7,7 @@ const Display = ({Quote}) => {
       <div>
         <h2>{Quote.quote}</h2>
         <img src={Quote.image} alt={Quote.name} />
+        <p>{Quote.character}</p>
        
       </div>
     )
